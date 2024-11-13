@@ -25,12 +25,13 @@ This repository includes:
 
 To use this setup on a new machine:
 
-1. **Clone the Repository**:
+1. Clone the Repository:
    Clone this repository to a location on your machine, such as `~/Dev` or `~/Projects`.
 
    ```bash
-   git clone git@github-personal:devsfm/dev-setup.git
+   git clone https://github.com/devsfm/dev-setup.git
    cd dev-setup
+   ```
 
 2. Run the Setup Script:
 The main setup script will symlink your dotfiles, set up Zsh and Git configurations, and install any required tools.
@@ -53,7 +54,8 @@ dev-setup/
 │   ├── zsh-setup.sh         # Zsh setup, including Oh My Zsh installation
 │   └── git-setup.sh         # Git configuration setup script
 ├── guides/                  # Directory for detailed setup guides
-│   ├── SSH-setup-guide.md   # Guide for setting up SSH for multiple GitHub accounts
+│   ├── SSH-setup-guide.md   # Guide for setting up SSH for multiple GitHub 
+│   ├── ZSHRC-setup-guide.md  # Guide for setting up Zsh configuration
 │   ├── Vim-setup-guide.md   # Guide for setting up Vim
 │   └── other-guides.md      # Other guides (e.g., IDE, Zsh)
 ├── config/                  # Additional configurations for tools
@@ -69,7 +71,7 @@ dev-setup/
    To set up this repository on any new machine, clone the repository and run the main install.sh script:
 
    ```bash
-   git clone git@github-personal:devsfm/dev-setup.git
+   git clone https://github.com/devsfm/dev-setup.git
    cd dev-setup
    ./setup-scripts/install.sh
    ```
