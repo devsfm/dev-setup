@@ -39,8 +39,9 @@ The main setup script will symlink your dotfiles, set up Zsh and Git configurati
 
 This script will configure your environment and apply your custom settings.
 
-Repository Structure
+## Repository Structure
 
+```
 dev-setup/
 ├── dotfiles/                # Directory for all dotfiles
 │   ├── .zshrc               # Zsh configuration
@@ -59,45 +60,61 @@ dev-setup/
 │   ├── cursor/              # Settings for Cursor AI IDE
 │   └── other-tools/         # Other tool configurations
 └── README.md                # Project overview and setup instructions
+```
 
-Installation
+## Installation
 
 1. Cloning and Running the Main Setup Script
 
-To set up this repository on any new machine, clone the repository and run the main install.sh script:
+   To set up this repository on any new machine, clone the repository and run the main install.sh script:
 
-git clone git@github-personal:devsfm/dev-setup.git
-cd dev-setup
-./setup-scripts/install.sh
+   ```bash
+   git clone git@github-personal:devsfm/dev-setup.git
+   cd dev-setup
+   ./setup-scripts/install.sh
+   ```
 
-The script will:
-	•	Install Oh My Zsh (if not already installed)
-	•	Configure Git with global user settings
-	•	Symlink all dotfiles to your home directory
+   The script will:
+   - Install Oh My Zsh (if not already installed)
+   - Configure Git with global user settings
+   - Symlink all dotfiles to your home directory
 
 2. SSH Configuration
 
-To set up separate SSH keys for work and personal GitHub accounts, refer to the SSH Setup Guide included in this repository. It details generating SSH keys, configuring SSH for multiple accounts, and adding keys to GitHub.
+   To set up separate SSH keys for work and personal GitHub accounts, refer to the SSH Setup Guide included in this repository. It details generating SSH keys, configuring SSH for multiple accounts, and adding keys to GitHub.
 
-Usage
+## Usage
 
-	•	Zsh Configuration: Customize your .zshrc with aliases, themes, and plugins. The zsh-setup.sh script will install Oh My Zsh and apply your .zshrc settings.
-	•	Git Configuration: The git-setup.sh script will set up your global Git configuration (name, email). For work-specific Git settings, configure local Git settings in individual repositories as needed.
-	•	Vim Configuration: The .vimrc file in dotfiles/ contains custom Vim settings. Modify it to add plugins and configurations as needed.
+- Zsh Configuration: Customize your `.zshrc` with aliases, themes, and plugins. The `zsh-setup.sh` script will install Oh My Zsh and apply your `.zshrc` settings.
+- Git Configuration: The `git-setup.sh` script will set up your global Git configuration (name, email). For work-specific Git settings, configure local Git settings in individual repositories as needed.
+- Vim Configuration: The `.vimrc` file in `dotfiles/` contains custom Vim settings. Modify it to add plugins and configurations as needed.
 
-Guides
+## Guides
 
-The guides folder contains detailed instructions for setting up various tools. Available guides include:
-	•	SSH-setup-guide.md: Step-by-step guide for configuring SSH keys and multiple GitHub accounts.
-	•	Vim-setup-guide.md: Instructions for customizing Vim with plugins and settings.
-	•	Additional guides for tools like Zsh, Cursor AI IDE, and other configurations.
+The `guides` folder contains detailed instructions for setting up various tools:
 
-Refer to these guides for specific setup instructions.
+### Core Setup Guides
+- [SSH Setup Guide](./guides/SSH-setup-guide.md): Guide for configuring multiple GitHub accounts with SSH keys, including:
+  - Generating separate SSH keys for work and personal accounts
+  - Configuring SSH agent and config file
+  - Setting up repository-specific Git configurations
+  
+- [Zsh Setup Guide](./guides/ZSHRC-setup-guide.md): Guide for customizing your Zsh environment, covering:
+  - Oh My Zsh installation and configuration
+  - Powerlevel10k theme setup
+  - Essential plugins for development
+  - Troubleshooting common issues
 
-Contributing
+### Additional Resources
+- Additional guides for tools like Vim and other configurations
+- IDE-specific setup instructions
+
+Refer to these guides for detailed setup instructions for each component of your development environment.
+
+## Contributing
 
 Feel free to fork this repository and add your customizations or improvements. Contributions can include:
-	•	Additional scripts for setup automation
-	•	New configurations for different tools or IDEs
-	•	Improvements to the SSH setup guide or other documentation
+- Additional scripts for setup automation
+- New configurations for different tools or IDEs
+- Improvements to the SSH setup guide or other documentation
 
