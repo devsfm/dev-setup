@@ -14,44 +14,52 @@ To install Oh My Zsh:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-2. Powerlevel10k Theme
+### 2. Powerlevel10k Theme
 
 This setup uses Powerlevel10k, a highly customizable prompt theme for Zsh. Powerlevel10k can display Git status, battery life, and other information directly in your terminal prompt.
 
 To install Powerlevel10k:
 
+```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH/custom/themes/powerlevel10k
+```
 
-After installation, set ZSH_THEME="powerlevel10k/powerlevel10k" in your .zshrc file. Then run:
+After installation, set `ZSH_THEME="powerlevel10k/powerlevel10k"` in your `.zshrc` file. Then run:
 
+```bash
 p10k configure
+```
 
 This command will guide you through customizing your prompt.
 
-3. Plugins
+### 3. Plugins
 
-The following plugins enhance Zsh functionality, providing command suggestions, syntax highlighting, and useful Git shortcuts. Here’s how to install them:
-	•	zsh-autosuggestions: Suggests commands based on your history.
+The following plugins enhance Zsh functionality, providing command suggestions, syntax highlighting, and useful Git shortcuts. Here's how to install them:
 
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+* zsh-autosuggestions: Suggests commands based on your history.
+  ```bash
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  ```
 
-	•	zsh-syntax-highlighting: Highlights syntax as you type commands.
+* zsh-syntax-highlighting: Highlights syntax as you type commands.
+  ```bash
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+  ```
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+* git: Provides useful Git aliases and shortcuts.
 
-	•	git: Provides useful Git aliases and shortcuts.
+## Troubleshooting
 
-Troubleshooting
+If you encounter issues with the `.zshrc` setup, here are some common fixes:
 
-If you encounter issues with the .zshrc setup, here are some common fixes:
-	•	Reload Configuration: After making changes to .zshrc, reload it with:
-
-source ~/.zshrc
-
-	•	Check Plugin Installation: Ensure that plugins are installed in $ZSH_CUSTOM/plugins/. Run ls $ZSH_CUSTOM/plugins/ to verify.
-	•	Powerlevel10k Issues: If the prompt looks incorrect, try running p10k configure again or check that Powerlevel10k is correctly installed in $ZSH/custom/themes/powerlevel10k.
-	•	Command Not Found: If an alias like weather isn’t working, ensure curl is installed and that the alias is correctly set in .zshrc.
+* Reload Configuration: After making changes to `.zshrc`, reload it with:
+  ```bash
+  source ~/.zshrc
+  ```
+* Check Plugin Installation: Ensure that plugins are installed in `$ZSH_CUSTOM/plugins/`. Run `ls $ZSH_CUSTOM/plugins/` to verify.
+* Powerlevel10k Issues: If the prompt looks incorrect, try running `p10k configure` again or check that Powerlevel10k is correctly installed in `$ZSH/custom/themes/powerlevel10k`.
+* Command Not Found: If an alias like `weather` isn't working, ensure `curl` is installed and that the alias is correctly set in `.zshrc`.
 
 Happy customizing!
-
