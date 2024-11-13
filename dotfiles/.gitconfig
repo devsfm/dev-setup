@@ -1,0 +1,9 @@
+[user]
+	name = John Doe
+	email = john.doe@example.com
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
