@@ -87,3 +87,26 @@ alias updatebrew="brew update && brew upgrade && brew cleanup"
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias weather="curl wttr.in"
+
+# Optional
+# Function to list processes using a specific port
+function list_port() {
+  if [[ -z $1 ]]; then
+    echo "Usage: lp <port> - specify a port number"
+  else
+    lsof -i :$1
+  fi
+}
+
+# Function to kill a process by PID
+function terminate_pid() {
+  if [[ -z $1 ]]; then
+    echo "Usage: tp <PID> - specify a process ID"
+  else
+    kill -9 $1
+  fi
+}
+
+# Aliases for easier command syntax
+alias lp='list_port'      # Use lp <port>
+alias kp='terminate_pid'  # Use kp <PID> 
