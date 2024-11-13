@@ -1,9 +1,16 @@
 [user]
-	name = John Doe
-	email = john.doe@example.com
+    name = Your Name
+    email = your_default_email@example.com
 
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+# Set default settings (optional)
+[core]
+    editor = vim
+    autocrlf = input
+
+# Include different configurations based on the directory path
+[includeIf "gitdir:~/path/to/work/"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/path/to/personal/"]
+    path = ~/.gitconfig-personal
+

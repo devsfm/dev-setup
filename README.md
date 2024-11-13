@@ -51,7 +51,7 @@ dev-setup/
 │   └── .vimrc               # Vim configuration
 ├── setup-scripts/           # Automated setup scripts
 │   ├── install.sh           # Main setup script
-│   ├── zsh-setup.sh         # Zsh setup, including Oh My Zsh installation
+│   ├── zsh-setup.sh         # Zsh setup
 │   └── git-setup.sh         # Git configuration setup script
 ├── guides/                  # Directory for detailed setup guides
 │   ├── SSH-setup-guide.md   # Guide for setting up SSH for multiple GitHub 

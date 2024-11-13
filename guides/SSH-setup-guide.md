@@ -1,5 +1,3 @@
-Guide to set up separate GitHub configurations for personal and work accounts using SSH keys.
-
 # GitHub SSH Setup for Personal and Work Accounts
 
 This guide walks through setting up separate SSH keys for your personal and work GitHub accounts. It configures Git to use different keys based on the repository directory.
@@ -25,12 +23,14 @@ Step 2: Add SSH Keys to SSH Agent
 
 To avoid re-entering the passphrase frequently, add the SSH keys to your SSH agent:
 
+```bash
 # Start the SSH agent in the background
 eval "$(ssh-agent -s)"
 
 # Add both keys to the agent
 ssh-add ~/.ssh/id_ed25519_work
 ssh-add ~/.ssh/id_ed25519_personal
+```
 
 Step 3: Configure SSH for Each Account
 
@@ -59,12 +59,13 @@ Step 4: Add SSH Keys to GitHub
 To add each public key to its respective GitHub account:
 	1.	Display each public key:
 
+```bash
 # Work key
 cat ~/.ssh/id_ed25519_work.pub
 
 # Personal key
 cat ~/.ssh/id_ed25519_personal.pub
-
+```
 
 	2.	Copy the key (from ssh-ed25519 to the end, including your email).
 	3.	Go to GitHub:
