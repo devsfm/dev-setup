@@ -104,29 +104,40 @@ git config user.name "Your Work Name"
 git config user.email "your_work_email@example.com"
 ```
 
-Step 7: Testing the Setup
+## Step 7: Testing the Setup
 
-To verify that your SSH keys are working:
+Test both SSH connections to verify your setup is working correctly:
 
+```bash
 # Test work GitHub connection
 ssh -T git@github-work
 
 # Test personal GitHub connection
 ssh -T git@github-personal
+```
 
-If everything is set up correctly, GitHub should respond with a message saying you’ve successfully authenticated.
+You should see success messages like:
+```
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
-Optional: Updating Remote URLs in Existing Repositories
+## Step 8: Managing Existing Repositories
 
-If you have existing repositories, you may need to update their remote URLs:
+If you have existing repositories that need to use the new SSH configuration:
 
-# Go to the repository directory
+1. Navigate to the repository:
+```bash
 cd path/to/repo
+```
 
-# Update the remote to use the appropriate alias
+2. Update the remote URL using the appropriate alias:
+```bash
+# For work repositories
 git remote set-url origin git@github-work:your_work_username/repo_name.git
-# or
+
+# For personal repositories
 git remote set-url origin git@github-personal:your_personal_username/repo_name.git
+```
 
 
 
