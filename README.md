@@ -1,5 +1,3 @@
-Here’s your README in Markdown format with consistent formatting and some minor adjustments for readability:
-
 # Dev Setup
 
 This repository contains my personalized development environment setup, including configuration files (dotfiles), SSH setup instructions, and scripts to automate setup on any new machine. It ensures a consistent environment across devices, making it easy to get started with development quickly.
