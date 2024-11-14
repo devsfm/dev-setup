@@ -1,4 +1,4 @@
-# setup-scripts Guid
+# setup-scripts Guide
 
 This guide provides an overview of the setup-scripts directory, explaining the purpose of each script and how to use them to automate the setup of your development environment. By using these scripts, you can quickly set up a consistent environment across multiple machines, making it easy to replicate configurations for Zsh, Git, and other tools.
 
