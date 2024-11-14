@@ -1,4 +1,4 @@
-# setup-scripts Guide
+# Setup Scripts Guide
 
 This guide provides an overview of the setup-scripts directory, explaining the purpose of each script and how to use them to automate the setup of your development environment. By using these scripts, you can quickly set up a consistent environment across multiple machines, making it easy to replicate configurations for Zsh, Git, and other tools.
 
@@ -90,13 +90,14 @@ What if I only want to configure Git or Zsh?
 
 You can run zsh-setup.sh or git-setup.sh independently if you only need one of them:
 
+```bash
 # Only configure Zsh
 ./setup-scripts/zsh-setup.sh
+```
 
+```bash
 # Only configure Git
 ./setup-scripts/git-setup.sh
+```
 
-## Conclusion
-
-By using these setup scripts, you’re creating a streamlined, efficient, and repeatable way to set up your development environment across multiple machines. This approach saves time, reduces manual errors, and allows for consistent configurations, all of which contribute to a more productive workflow.
 
